@@ -7,53 +7,51 @@
 </head>
 <body>
     <h2>Vos coordonnées:</h2><br>
-    <strong class="obligatory">* Ces zones sont obligatoires pour envoyer le formulaire.</strong>
-    <form>
+    <strong class="obligatory">* Ces zones sont obligatoires pour envoyer le formulaire.</strong><br>
         <label for="company">Société: </label> 
-        <input type="text" id="company"> <strong class="obligatory">*</strong><br> 
+        <input type="text" id="company"> <strong id="obligCompany" class="obligatory">*</strong><br> 
         
         <label for="represent">Personne à contacter: </label>
-        <input type="text" id="represent"> <strong class="obligatory">*</strong><br>
+        <input type="text" id="represent"> <strong id="obligRepresent" class="obligatory">*</strong><br>
         
         <label for="adress">Adresse de l'entreprise: </label>
         <textarea id="adress"></textarea><br>
 
         <label for="zipCode">Code Postal: </label>
-        <input type="text" id="zipCode"><strong class="obligatory">*</strong><br>
+        <input type="text" id="zipCode"><strong id="obligZipCode" class="obligatory">*</strong><br>
         
         <label for="city">Ville: </label>
-        <input type="text" id="city"><strong class="obligatory">*</strong><br>
+        <input type="text" id="city"><strong id="obligCity" class="obligatory">*</strong><br>
         
         <label for="email">Email: </label>
-        <input type="text" id="email"><strong class="obligatory">*</strong><br>
+        <input type="text" id="email"><strong id="obligEmail" class="obligatory">*</strong><br>
         
         <label for="tel">Téléphone: </label>
         <input type="text" id="tel"><br>
         
-        <label for="tel">Sélectionnez l'environnement technique du projet : </label>
-        <textarea id="tel"></textarea><br>
+        <label for="projEnv">Sélectionnez l'environnement technique du projet : </label>
+        <textarea id="selectedProjEnv"></textarea><br>
         
-        <select id="projectEnvironement">
+        <select id="projEnv">
             <option id="hiddenoption" value="" disabled selected hidden>Choisissez</option>
-            <option>Access</option>
-            <option>Java</option>
-            <option>Delphi</option>
-            <option>Windev</option>
-            <option>Visual Basic</option>
-            <option>Power builder</option>
-            <option>Internet</option>
-            <option>Intranet</option>
-            <option>Windows NT</option>
-            <option>Unix</option>
-            <option>SQL Server</option>
-            <option>Oracle</option>
-            <option>Autres...</option>
+            <option class="select">Access</option>
+            <option class="select">Java</option>
+            <option class="select">Delphi</option>
+            <option class="select">Windev</option>
+            <option class="select">Visual Basic</option>
+            <option class="select">Power builder</option>
+            <option class="select">Internet</option>
+            <option class="select">Intranet</option>
+            <option class="select">Windows NT</option>
+            <option class="select">Unix</option>
+            <option class="select">SQL Server</option>
+            <option class="select">Oracle</option>
+            <option class="select">Autres...</option>
         </select><br>
         
-        <button>Envoyer</button>
+        <button id="sendBtn">Envoyer</button>
         
-        <button>Effacer</button>
-    </form>
+        <button id="delBtn">Effacer</button>
     <script src="scripts/script.js"></script>
 </body>
 </html>
