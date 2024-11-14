@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Vos coordonnées:</h2><br>
+    <strong class="obligatory">* Ces zones sont obligatoires pour envoyer le formulaire.</strong>
+    <form>
+        <label for="company">Société: </label> 
+        <input type="text" id="company"> <strong class="obligatory">*</strong><br> 
+        
+        <label for="represent">Personne à contacter: </label>
+        <input type="text" id="represent"> <strong class="obligatory">*</strong><br>
+        
+        <label for="adress">Adresse de l'entreprise: </label>
+        <textarea id="adress"></textarea><br>
+
+        <label for="zipCode">Code Postal: </label>
+        <input type="text" id="zipCode"><strong class="obligatory">*</strong><br>
+        
+        <label for="city">Ville: </label>
+        <input type="text" id="city"><strong class="obligatory">*</strong><br>
+        
+        <label for="email">Email: </label>
+        <input type="text" id="email"><strong class="obligatory">*</strong><br>
+        
+        <label for="tel">Téléphone: </label>
+        <input type="text" id="tel"><br>
+        
+        <label for="tel">Sélectionnez l'environnement technique du projet : </label>
+        <textarea id="tel"></textarea><br>
+        
+        <select id="projectEnvironement">
+            <option id="hiddenoption" value="" disabled selected hidden>Choisissez</option>
+            <option>Access</option>
+            <option>Java</option>
+            <option>Delphi</option>
+            <option>Windev</option>
+            <option>Visual Basic</option>
+            <option>Power builder</option>
+            <option>Internet</option>
+            <option>Intranet</option>
+            <option>Windows NT</option>
+            <option>Unix</option>
+            <option>SQL Server</option>
+            <option>Oracle</option>
+            <option>Autres...</option>
+        </select><br>
+        
+        <button>Envoyer</button>
+        
+        <button>Effacer</button>
+    </form>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
